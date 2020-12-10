@@ -8,10 +8,10 @@ My focus was on the capabilities and communication protocols use by the malware.
 
 - Section 1 - installation how & where
 - Section 2 - features, what can the malware do and in overview how it does it
-- Section 3 - a look on the way the malware communicates with the outside world
+- Section 3 - a look on the way the malware communicates with its C&C server
 - Section 4 - extracted IoCs for signatures-based detection 
 
-## Installation
+## Installation How & Where
 
 The malware is installed as a service using .NET's `InstallUtils.exe` and started using `net start "IPsec Helper"`.
 
@@ -113,7 +113,7 @@ For that, the malware utilizes WMI for system information queries.
 The information sent to the attacker which responses with `NodeId`.  
 Same as before, the malware won't continue its execution without getting `NodeId`.
 
-## Backdoor Functionality
+## Malware's Functionality
 
 Finished with client registration, the malware is ready for executing commands sent by the server.
 
