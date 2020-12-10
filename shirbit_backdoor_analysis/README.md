@@ -277,7 +277,7 @@ The communication between the client and the server preformed over HTTP with the
 
 Messages sent through random relay address, with an option for using a proxy server defined inside the configuration file.
 
-### Message data
+### Messages format
 
 The messages are Base64 encoded with the following data:
 
