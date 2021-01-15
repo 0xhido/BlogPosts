@@ -1,6 +1,6 @@
-# Shirbit's Backdoor Analysis
+# Shirbit's Breach - Backdoor Analysis
 
-Today we're going to talk about the analysis of the [reported backdoor](https://www.virustotal.com/gui/file/96cc69242a7900810c4d2e9f3f55aad8edb89137959f4c370f80a6e574ddc201/detection) used in Shirbit's [recent](https://www.timesofisrael.com/hackers-breach-israeli-insurance-company-steal-client-data/) [breach](https://news.simplify.co.il/%D7%9E%D7%94-%D7%A7%D7%A8%D7%94-%D7%9C%D7%A9%D7%99%D7%A8%D7%91%D7%99%D7%98-%D7%9E%D7%AA%D7%A7%D7%A4%D7%AA-%D7%9B%D7%95%D7%A4%D7%A8%D7%94-%D7%A1%D7%99%D7%99%D7%91%D7%A8/). 
+Today we're going to talk about the analysis of the [reported backdoor](https://news.simplify.co.il/%D7%9E%D7%94-%D7%A7%D7%A8%D7%94-%D7%9C%D7%A9%D7%99%D7%A8%D7%91%D7%99%D7%98-%D7%9E%D7%AA%D7%A7%D7%A4%D7%AA-%D7%9B%D7%95%D7%A4%D7%A8%D7%94-%D7%A1%D7%99%D7%99%D7%91%D7%A8/) used in Shirbit's [recent breach](https://www.timesofisrael.com/hackers-breach-israeli-insurance-company-steal-client-data/). 
 
 ![virus total](images/virustotal_scan.png)
 
@@ -11,7 +11,7 @@ My focus was on the capabilities and communication protocols use by the malware.
 - Section 3 - a look on the way the malware communicates with its C&C server
 - Section 4 - extracted IoCs for signatures-based detection 
 
-## Installation How & Where
+## Installation
 
 The malware is installed as a service using .NET's `InstallUtils.exe` and started using `net start "IPsec Helper"`.
 
@@ -277,7 +277,7 @@ The communication between the client and the server preformed over HTTP with the
 
 Messages sent through random relay address, with an option for using a proxy server defined inside the configuration file.
 
-### Message data
+### Messages format
 
 The messages are Base64 encoded with the following data:
 
