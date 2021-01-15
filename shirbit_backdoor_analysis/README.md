@@ -1,5 +1,7 @@
 # Shirbit's Breach - Backdoor Analysis
 
+*Published on Medium: https://medium.com/@hidocohen/shirbits-breach-backdoor-analysis-cd8273594f60*
+
 Today we're going to talk about the analysis of the [reported backdoor](https://news.simplify.co.il/%D7%9E%D7%94-%D7%A7%D7%A8%D7%94-%D7%9C%D7%A9%D7%99%D7%A8%D7%91%D7%99%D7%98-%D7%9E%D7%AA%D7%A7%D7%A4%D7%AA-%D7%9B%D7%95%D7%A4%D7%A8%D7%94-%D7%A1%D7%99%D7%99%D7%91%D7%A8/) used in Shirbit's [recent breach](https://www.timesofisrael.com/hackers-breach-israeli-insurance-company-steal-client-data/). 
 
 ![virus total](images/virustotal_scan.png)
